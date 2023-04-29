@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đơn đăng ký</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .main{
+            background-image: linear-gradient(335deg, #80007b, #5500bd);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form{
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff2f;
+            border-radius: 15px;
+        }
+
+        .table{
+            width: 100%;
+            padding:30px 20px ;
+        }
+        td{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            padding: 5px;
+        }
+
+        .header-name{
+            font-size: 30px;
+            font-weight: bold;
+            color: #ffffff;
+            padding-bottom: 20px;
+        }
+        .enter-text{
+            flex: 1;
+            background-color: #ffffffe0;
+            color: #444444;
+            width: 200px;
+            border: none;
+            outline: none;
+            height: 40px;
+            margin: 10px;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+
+        .enter-text::placeholder{
+            color: #c4c4c4;
+            font-size: 16px;
+        }
+        .button{
+            padding-top: 10px;
+        }
+        .button button{
+            width: 200px;
+            height: 45px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 7px;
+            background-color: #258d21;
+            font-size: 17px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .button button:hover{
+            
+            background-color: #2ba327;
+        }
+
+       
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form class="form" action="Register" >
+            <table class="table">
+                <tr>
+                  <th class="header-name" colspan="2">Đơn đăng ký làm người yêu Mạnh</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input placeholder="First name" type="text"  class="enter-text first-name">
+                        <input placeholder="Last name" type="text"  class="enter-text last-name">
+                       
+                    </td>
+                  </tr>
+                <tr>
+                  <td colspan="2">
+                    <input placeholder="Email" type="email" name="email" class="enter-text email">
+                    
+                  </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input placeholder="Password" type="password" name="password" class="enter-text password">
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input placeholder="Confirm password" type="password" name="password" class="enter-text confirm-password">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="button">
+                        <button id="submit" type="button">Đăng ký ngay</button>
+                    </td>
+                </tr>
+                
+              </table>
+        </form>
+    </div>
+    
+</body>
+</html> 
