@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đơn đăng ký</title>
+    <title>REGISTER</title>
     <style>
         *{
             padding: 0;
@@ -86,7 +86,14 @@
             background-color: #2ba327;
         }
 
-       
+        .notification{
+            position: absolute;
+            padding: 0 0 0 20px;
+            left: 0;
+            bottom: 0;
+            font-size: 12px;
+            color: #ff4d4d;
+        }
         
     </style>
 </head>
@@ -95,36 +102,36 @@
         <form class="form" action="Register" >
             <table class="table">
                 <tr>
-                  <th class="header-name" colspan="2">Đơn đăng ký làm người yêu Mạnh</th>
+                  <th class="header-name" colspan="2">REGISTER</th>
                 </tr>
                 <tr>
                     <td>
                         <input placeholder="First name" type="text"  class="enter-text first-name">
                         <input placeholder="Last name" type="text"  class="enter-text last-name">
-                       
+                        <div class="notification noti-name"></div>
                     </td>
                   </tr>
                 <tr>
                   <td colspan="2">
                     <input placeholder="Email" type="email" name="email" class="enter-text email">
-                    
+                    <div class="notification noti-email"></div>
                   </td>
                 </tr>
                 <tr>
                     <td colspan="2">
                         <input placeholder="Password" type="password" name="password" class="enter-text password">
-                       
+                        <div class="notification noti-pass"></div>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
                         <input placeholder="Confirm password" type="password" name="password" class="enter-text confirm-password">
-                        
+                        <div class="notification noti-confirm"></div>
                     </td>
                 </tr>
                 <tr>
                     <td class="button">
-                        <button id="submit" type="button">Đăng ký ngay</button>
+                        <button id="submit" type="button">Register now</button>
                     </td>
                 </tr>
                 
